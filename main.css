@@ -35,6 +35,11 @@
     border-radius: 5px;
  }
 
+ #mainCal > div:hover , #equal:hover {
+    background: blueviolet;
+ }
+
+
 input {
     width: 250px;
     height: 40px;
@@ -47,4 +52,11 @@ input {
     border-radius: 5px;
     font-size: 1.5rem;
     background-color: #ffcc00;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
 }
