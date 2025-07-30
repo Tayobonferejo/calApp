@@ -1,0 +1,50 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ main {
+    margin: 3rem auto;
+     background-color: rgb(62, 62, 126);
+     width: 350px;
+     height: 500px;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #mainCal {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    gap: 1rem;
+
+ }
+
+ #mainCal > div {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    background-color: rgb(151, 151, 177);
+    border-radius: 5px;
+ }
+
+input {
+    width: 250px;
+    height: 40px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+#equal {
+    grid-row: span 3;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background-color: #ffcc00;
+}
