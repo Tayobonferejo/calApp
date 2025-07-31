@@ -1,5 +1,22 @@
 
-alert("hello world");
-document.getElementById("calulator").addEventListener("keydown", function(event){
+const inputNumber = document.getElementById("calulator");
+
+inputNumber.addEventListener("keydown", function(event){
     event.preventDefault();
 });
+
+const links =  document.querySelectorAll(".myClick");
+
+for( let i=0; i<links.length; i++){
+    links[i].addEventListener("click", function(event){
+        event.preventDefault();
+
+        const linkText = event.target.textContent;
+        const digit = linkText.match(/\d/);
+
+        if (digit) {
+        // append to current input value
+        inputNumber.value += digit[0];
+        }
+    });
+}
