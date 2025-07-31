@@ -1,5 +1,6 @@
 
 const inputNumber = document.getElementById("calulator");
+const clearBtn = document.getElementById("clear")
 
 inputNumber.addEventListener("keydown", function(event){
     event.preventDefault();
@@ -16,7 +17,12 @@ for( let i=0; i<links.length; i++){
 
         if (digit) {
         // append to current input value
-        inputNumber.value += digit[0];
+            inputNumber.value += digit[0];
         }
     });
 }
+
+clearBtn.addEventListener("click", function(event){
+    event.preventDefault();
+    inputNumber.value = "";
+})
